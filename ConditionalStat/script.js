@@ -5,7 +5,7 @@ let inputValue = parseInt(valueEntered);
 
 if (inputValue > 1) {
     if (inputValue % 2 == 0) {
-        console.log('Even Number')
+       console.log('Even Number')
     } else {
         console.log('Odd Number')
     }
