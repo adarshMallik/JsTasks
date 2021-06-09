@@ -18,7 +18,7 @@ if (inputValue > 1) {
 let valueEntered = prompt("Please enter a number");
 let inputValue = parseInt(valueEntered);
 
-if (isNaN(inputValue)) {
+if ( isNaN(inputValue) ) {
     console.log("Input value is a String");
 } else {
     console.log("Input Value is a Number");
