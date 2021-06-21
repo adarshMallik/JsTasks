@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type = text],
+input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]
+{
+    background-color: darkgreen;
+    color: white;
+    padding: 14px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.container {
+    padding: 50px;
+    background-color: rgb(243, 212, 212);
+    border: 1px solid black;
+  }

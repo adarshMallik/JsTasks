@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form1.css">
+    <title>Biodata Form</title>
+
+</head>
+
+<body>
+    <h1 class="heading"> BIODATA FORM</h1>
+    <div class="container">
+        <form>
+            <p id="successMessage"></p>
+            <div class="row">
+                <div class="col-50">
+                    <label for="fName">
+                        First Name :
+                    </label>
+                </div>
+                <div class="col-50">
+                    <input type="text" id="fname" name="firstname" placeholder="Your Name...">
+                    <p id="fnameError">
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-50">
+                    <label for="lname">
+                        Last Name :
+                    </label>
+                </div>
+                <div class="col-50">
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+                    <p id="lnameError">
+                        
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-50">
+                    <label for="gender">
+                        Gender
+                    </label>
+                </div>
+                <div class="col-50">
+                    <select name="gender" id="gender">
+                        <option value="default">Select Gender...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <p id="genderError">
+                        
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-50">
+                    <label for="email">
+                        Email
+                    </label>
+                </div>
+                <div class="col-50">
+                    <input type="email" id="email" name="email" placeholder="Your Email...">
+                    <p id="emailError">
+                        
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-50">
+                    <label for="password">
+                        Password
+                    </label>
+                </div>
+                <div class="col-50">
+                    <input type="password" id="password" name="password" placeholder="Your Password...">
+                    <p id="passwordError">
+                        
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+  
+   
+</body>
+
+</html>
+
+<script src="./form1.js">
+
+</script>
