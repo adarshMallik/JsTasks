@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+body{
+    background-color: darksalmon;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px;
+    background-color: cornsilk;
+    text-align: center;
+}
+
+header{
+    width:20em;
+    margin: 10px auto;
+}
+
+h1{
+    font-family: stylish;
+    color: darkslategrey;
+}
+
+h3{
+    color: rgb(31, 182, 31);
+    text-decoration: underline;
+}
+img{
+    display: block;
+    max-width:500px;
+    max-height:300px;
+    width: 400px;
+    height:300px;
+}
+

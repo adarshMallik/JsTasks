@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(243, 226, 226);
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.dynamicTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;  
+}
+
+table td{
+    border: 2px solid black;
+    padding:7px;
+    background-color: rgba(137, 43, 226, 0.212);
+}

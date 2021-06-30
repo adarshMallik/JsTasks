@@ -1,0 +1,45 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+}
+
+
+img{
+  display: block;
+  width: 60vh;
+  height: 60vh;
+  border-radius: 30%;
+  border:1px solid black;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+input[type=button]{
+    background-color: chocolate;
+    padding: 10px 30px;
+    margin-top: 20px;
+    margin-left: 20vh;
+}
+
+h1{
+    font-family: cursive;
+    font-style: italic;
+    color: crimson;
+    margin: 20px 70vh;
+}
+
+p{
+    font-weight: bolder;
+    color: darkred;
+}
+
+@keyframes example{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
