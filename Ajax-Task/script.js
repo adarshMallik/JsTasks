@@ -4,6 +4,8 @@ let homebtn = document.getElementById('home')
 
 let result = document.getElementById("result")
 
+let btnSubmit = document.getElementById("SubmitButton")
+
 
 homebtn.addEventListener('click', homepageContent());
 
@@ -20,6 +22,73 @@ xhr.open('Get', "https://fakestoreapi.com/products", true)
 console.log(xhr.readyState)
 xhr.send()
 }
+
+// Post Data using an api
+// function postData()
+// {
+  
+//     fetch("https://fakestoreapi.com/products/",{
+//         method: "PUT",
+//         headers:{
+//          "Content-Type":"application/json"
+//         },
+//         body: JSON.stringify({
+//           title: 'test product',
+//           price: 13.5,
+//           description: 'lorem ipsum set',
+//           image: 'https://i.pravatar.cc',
+//           category: 'electronic'
+//         })
+//     }).then(function(data){
+//         console.log(data)
+//     })
+
+// }
+
+// function putData()
+// {
+//     fetch("https://fakestoreapi.com/products/7",{
+//           method:"PUT",
+//           headers:{
+//               "Content-Type":"application/json"
+//           },
+//           body: JSON.stringify({
+//             title: 'test product',
+//                      price: 13.5,
+//                        description: 'lorem ipsum set',
+//                        image: 'https://i.pravatar.cc',
+//                        category: 'electronic'
+//           })
+//      }).then(function (data){
+//          console.log(data.status)
+//          data.json().then(function(result){
+//               console.log(result)
+//          })
+//      })
+// }
+
+
+//delete data
+
+function deleteData(){
+
+    fetch("https://fakestoreapi.com/products/7",{
+        method:"DELETE"
+    }).then(function (data){
+        console.log(data)
+        data.json().then(function(result){
+            console.log(result)
+        })
+    })
+}
+
+
+
+// btnSubmit.onclick = postData;
+// btnSubmit.onclick = putData;
+btnSubmit.onclick = deleteData;
+
+
 
 let dynamicTable = (materials) => {  
     let dynTable = `<table>
@@ -49,7 +118,6 @@ for(let i=0;i<materials.length;i++)
 dynTable += `</tbody></table>`
 result.innerHTML = dynTable;
 }
-
 
 // Contact 
 
